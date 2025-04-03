@@ -1,0 +1,3 @@
+install:
+    - FILE="-Dfile=test-release.aar"
+    - mvn install:install-file $FILE -DgroupId=com.gloomy -DartifactId=myLibrary -Dversion=1.0.0 -Dpackaging=aar -DpomFile=pom.xml
